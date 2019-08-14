@@ -43,9 +43,31 @@ class Ship200_Onebyone_IndexController extends Mage_Core_Controller_Front_Action
 		
 
 		if($_POST['update_tracking'] != "" && $_GET['id'] == $secret_key){
+			
+			
 					$order=Mage::getModel("sales/order")->loadByIncrementId($_POST['keyForUpdate']);
 					
-					
+					if($order->canShip()){
+
+						$arrTracking = array(
+						'carrier_code' => strtolower($_POST['carrier']),
+						'title' => $_POST[service]." - (Ship200 OneByOne)",
+						'number' => $_POST['tracking'],
+						);	
+						
+						$itemQty =  $order->getItemsCollection()->count();
+						$shipment = $order->prepareShipment();
+						if($shipment){								
+							$track = Mage::getModel('sales/order_shipment_track')->addData($arrTracking);
+							$shipment->addTrack($track);
+							$shipment->register();					
+							$transactionSave = Mage::getModel('core/resource_transaction')
+							->addObject($shipment)
+							->addObject($shipment->getOrder())
+							->save();
+									}
+							
+					}				
 					
 					$order->setData('state', $order_status_tracking);
 					$order->setStatus($order_status_tracking);
