@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>ship200_onebyone</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
     <channel>community</channel>
@@ -17,8 +17,8 @@ Demo:&#xD;
 Visit Us at &lt;a href="http://www.Ship200.com"&gt;www.Ship200.com&lt;/a&gt;</description>
     <notes>nothing</notes>
     <authors><author><name>Ship200</name><user>Ship200</user><email>bell@ship200.com</email></author></authors>
-    <date>2014-07-21</date>
-    <time>13:18:45</time>
+    <date>2014-08-07</date>
+    <time>05:47:40</time>
     <contents><target name="magelocal"><dir name="Ship200"><dir name="Onebyone"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="View.php" hash="9e493ba3a3351061af3c655d9b09bab2"/></dir></dir><file name="Ship200.php" hash="c43d15e9f75a7fdfc163c8314e9646a6"/><dir name="System"><dir name="Config"><dir name="Form"><file name="Button.php" hash="1f325984c1daa1704e1e8529f6af8fd5"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="684696810527e63cab3f4dd0b0e0f042"/></dir><dir name="Model"><dir name="Source"><file name="Carrier.php" hash="cee4a17e17bdfa176ebcf090b0645e51"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="Ship200Controller.php" hash="c0570021dacf790f74514a55a82fc960"/></dir><file name="IndexController.php" hash="ffd395045f492d1d89bb913273d042b4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f3ca9a4f15afc39ce63aa4478c88bfcf"/><file name="config.xml" hash="6376c4f5758f645a7175f8e1a30beda9"/><file name="system.xml" hash="b09f4850717c6ba6337459ac9b238c4f"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="Ship200_onebyone.xml" hash="958bafb8d90b63cf2d8c783a0eadc7d5"/></dir><dir name="template"><dir name="onebyone"><dir name="sales"><dir name="order"><dir name="view"><file name="info.phtml" hash="f50ef6fde79f7288ca7e645bb22c6fe6"/></dir></dir></dir><file name="ship200.phtml" hash="0a12ec3e50b74ebe1fbacfc452a698df"/><dir name="system"><dir name="config"><file name="button.phtml" hash="de35b412e052ce2c082212dde277e79c"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ship200_Onebyone.xml" hash="c66ea49dc8acfcc0ed30a3348c7c29f7"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
