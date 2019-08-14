@@ -109,7 +109,7 @@
                             <show_in_store>1</show_in_store>
 
 							<comment>
-                <![CDATA[1. Login in into your Ship200.com account. </br> 2. On top menu go to "Bulk Processing" -> "Generate Key" </br>3. Click "Generate Key", then replace "XXXXXXXXXX-XXX" with your generated key in the next step]]>
+                <![CDATA[<br>1. Login in into your Ship200.com account.  <br> 2. On top menu go to "Settings" -&gt; "OneByOne Plugin"  <br> 3.  Click "Generate Key for OneByOne Plugin", then insert your key into "Ship200 Key" field on this page.]]>
               </comment>
                             
 

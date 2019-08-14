@@ -161,9 +161,9 @@ $shipping_address = $_order->getShippingAddress();
 
 			'<?php echo addslashes($_order->getGrandTotal()) ?>',        //10 Declared Value
 
-			'',        //11 Weight
+			'<?php echo addslashes(round($_order->getWeight(), 2)) ?>',        //11 Weight
 
-			'',        //12 Weight Units (lb or oz): valid values are 'lb' or 'oz'
+			'lb',        //12 Weight Units (lb or oz): valid values are 'lb' or 'oz'
 
 			'',        //13 Dimensions Length
 
